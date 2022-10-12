@@ -1,25 +1,32 @@
-import logo from './logo.svg';
+import React from 'react';
+// import React, { Components } from 'react';
 import './App.css';
+ import Greet from './components/Greet';
+ import Welcome from './components/Welcome';
+ import Hello from './components/Hello';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Hello raja where are you i'm comming to hyd
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+// class App extends React.Component {
+//   render() {
+//     return <h2>I am a Car!</h2>;
+//   }
+// }
+
+
+class App extends React.Component {
+  render() {
+   return (
+     <div className="App">
+     <Greet name='raja' heroName='Rajasekhar'>
+      <p>This is my Name</p>
+     </Greet>
+     <Greet name='Ram' heroName='Raj' />
+     <Greet name='raji' heroName='Rajarni'/>
+       <Welcome /> 
+      <Hello /> 
+     </div>
+   );
+ }
 }
 
 export default App;
