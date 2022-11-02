@@ -1,13 +1,20 @@
 import React from 'react';
 // import React, { Components } from 'react';
 import './App.css';
+import FragmentDemo from './components/FragmentDemo';
+// import InLine from './components/InLine';
+// import NameList from './components/NameList';
 // import ParentComponent from './components/ParentComponent';
-import UserGreeting from './components/UserGreeting';
+// import UserGreeting from './components/UserGreeting';
 // import EventBind from './components/EventBind';
 //  import Greet from './components/Greet';
 //  import Welcome from './components/Welcome';
 //  import Hello from './components/Hello';
 //  import FunctionClick from './components/FunctionClick';
+// import StyleSheet from './components/StyleSheet';
+// import './appStyles.css';
+// import styles from './appStyles.module.css'
+// import Form from './components/Form';
 
 // class App extends React.Component {
 //   render() {
@@ -19,11 +26,18 @@ import UserGreeting from './components/UserGreeting';
 class App extends React.Component {
   render() {
    return (
-     <div className="App">
-      <UserGreeting />
+      <div className="App">
+        <FragmentDemo />
+        {/* <Form /> */}
+        {/* <h1 className='error'>Error</h1>
+        <h1 className={styles.success}>Success</h1> */}
+        {/* <InLine /> */}
+      {/* <StyleSheet primary={true}/> */}
+      {/* <NameList /> */}
+      {/* <UserGreeting /> */}
       {/* <ParentComponent /> */}
       {/* <EventBind /> */}
-       {/* <FunctionClick />  */}
+       {/* <FunctionClick />   */}
      {/* <Greet name='raja' heroName='Rajasekhar'>
       <p>This is my Name</p>
      </Greet>

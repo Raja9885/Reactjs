@@ -13,7 +13,7 @@ class UserGreeting extends Component {
         //turnary operator
         return this.state.isLoggedIn ?(
           <div>Hello Narasimhulu</div>
-        ) : (
+        ):(
             <div>Hello Lakshmi devi</div>
         )
        // variable rendaring

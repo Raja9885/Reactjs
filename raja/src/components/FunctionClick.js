@@ -3,8 +3,7 @@ import React from 'react'
 function FunctionClick() {
 
    function changeFunction() {
-
-       console.log("hello")
+       console.log('Hello')
    }
   
   return (
