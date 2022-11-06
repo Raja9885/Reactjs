@@ -1,7 +1,16 @@
 import React from 'react';
 // import React, { Components } from 'react';
 import './App.css';
-import FragmentDemo from './components/FragmentDemo';
+import ClickCounter from './components/ClickCounter';
+// import ClickCounter from './components/ClickCounter';
+import Count from './components/Count';
+import Hover from './components/Hover';
+// import Hover from './components/Hover';
+// import User from './components/User';
+// import PortalsDemo from './components/PortalsDemo';
+// import FocusInput from './components/FocusInput';
+// import RefDemo from './components/RefDemo';
+// import FragmentDemo from './components/FragmentDemo';
 // import InLine from './components/InLine';
 // import NameList from './components/NameList';
 // import ParentComponent from './components/ParentComponent';
@@ -27,7 +36,21 @@ class App extends React.Component {
   render() {
    return (
       <div className="App">
-        <FragmentDemo />
+        <Count render={(Count, incrementCount) =>(
+        <ClickCounter Count={Count}
+         incrementCount={incrementCount}  />
+         )} />
+          <Count render={(Count, incrementCount) =>(
+        <Hover Count={Count}
+         incrementCount={incrementCount}  />
+         )} />
+        {/* <ClickCounter />
+        <Hover />
+        <User name={(isLogedIn) => isLogedIn ? 'Raja' : 'Guest'} /> */}
+        {/* <PortalsDemo /> */}
+        {/* <FocusInput /> */}
+        {/* <RefDemo /> */}
+        {/* <FragmentDemo /> */}
         {/* <Form /> */}
         {/* <h1 className='error'>Error</h1>
         <h1 className={styles.success}>Success</h1> */}
